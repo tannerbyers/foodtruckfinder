@@ -1,15 +1,15 @@
 /*jshint esversion: 6 */
 
-import  {Input, InputGroup} from 'reactstrap';
+import React from 'react';
+import  {Input, InputGroupAddon, InputGroup, Button} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React from 'react';
-
-const LocationBar = () => {
+const LocationBar = (props) => {
         return (
     <div>
-    <InputGroup size="lg">
+    <InputGroup size="lg" className="col-md-6 container-fluid">
         <Input  placeholder="Zip Code" />
+        <InputGroupAddon addonType="prepend"><Button>Find My Location</Button></InputGroupAddon>
     </InputGroup>
     </div>
 )
