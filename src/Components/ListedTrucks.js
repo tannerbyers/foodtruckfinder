@@ -7,7 +7,7 @@ import React from "react";
 
 const ListedTrucks = () => {
   return (
-    <div style={{ height: '90vh', width: '50%' }}>
+    <div className="container" style={{ width: '50vh' }}>
       <ListGroup>
         <ListGroupItem>Cras justo odio</ListGroupItem>
         <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
