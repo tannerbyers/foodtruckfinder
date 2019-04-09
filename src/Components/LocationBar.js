@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import  {Input, InputGroup} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Jumbotron, Container } from 'reactstrap';
