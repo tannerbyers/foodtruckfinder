@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { Container, Row } from "reactstrap";
 
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import SimpleMap from "./Components/SimpleMap";
 import ListedTrucks from "./Components/ListedTrucks";
 import LocationBar from "./Components/LocationBar";
@@ -15,14 +16,15 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-          <LocationBar />
+        <LocationBar />
         <br />
         <Container>
-        <Row>
-          <SimpleMap />
-          <ListedTrucks />
+          <Row>
+            <ListedTrucks />
+            <SimpleMap />
           </Row>
         </Container>
+        <Footer />
       </div>
     );
   }
