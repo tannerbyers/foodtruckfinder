@@ -33,3 +33,10 @@ FoodTrucks : [
         Hours: "10 AM - 1 PM"
     }
 ]
+
+TODO:
+
+Make the food truck list selectable and have a dropdown with the above data. 
+Add markers on the map for food truck
+Create algorithms for when a food truck is listed depending on the current day. 
+Figure out a way to get all the schedules in one format easily 
