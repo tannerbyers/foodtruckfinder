@@ -9,11 +9,11 @@ const ListedTrucks = () => {
   return (
     <div className="container" style={{ width: '50vh' }}>
       <ListGroup>
-        <ListGroupItem>Cras justo odio</ListGroupItem>
-        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-        <ListGroupItem>Morbi leo risus</ListGroupItem>
-        <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
-        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        <ListGroupItem >Sweeto Burrito</ListGroupItem>
+        <ListGroupItem>Chinchillas</ListGroupItem>
+        <ListGroupItem>Not Your Mommas Food Truck</ListGroupItem>
+        <ListGroupItem>Rite on Que</ListGroupItem>
+        <ListGroupItem>Blazin Azn</ListGroupItem>
       </ListGroup>
     </div>
   );
