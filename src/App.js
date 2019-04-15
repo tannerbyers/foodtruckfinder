@@ -31,7 +31,7 @@ class App extends Component {
           Location: [30.237247, -81.519488],
           Pic: "google.com",
           Days: [ 1, 3, 5 ],
-          Hours: "10 AM - 1 PM",
+          Hours: "10 AM - 4 PM",
           Lat: 30.239889,
           Lng: -81.591209
       },
@@ -40,7 +40,7 @@ class App extends Component {
           Location: [30.237247, -81.519488],
           Pic: "google.com",
           Days: [ 1, 3, 5 ],
-          Hours: "10 AM - 1 PM",
+          Hours: "9 AM - 5 PM",
           Lat: 30.25,
           Lng: -81.53
       }
