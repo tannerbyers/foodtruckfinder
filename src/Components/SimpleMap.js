@@ -14,6 +14,8 @@ class SimpleMap extends Component {
     zoom: 11
   };
 
+ 
+
   render() {
     return (
       // Important! Always set the container height explicitly
