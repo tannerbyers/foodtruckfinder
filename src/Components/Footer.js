@@ -2,7 +2,7 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Jumbotron, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 const Footer = (props) => {
   return (
