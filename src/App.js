@@ -10,7 +10,6 @@ import ListedTrucks from "./Components/ListedTrucks";
 import LocationBar from "./Components/LocationBar";
 import FindMeBtn from "./Components/FindMeBtn";
 import "./App.css";
-
 const TestData = [
   {
       Name: "Sweeto Burrito",
@@ -67,7 +66,7 @@ class App extends Component {
   
   render() {
 
-    return (
+       return (
       <div className="App">
         <Header />
         <LocationBar />
