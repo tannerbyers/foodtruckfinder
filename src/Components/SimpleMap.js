@@ -16,7 +16,7 @@ class SimpleMap extends Component {
 
  
 
-  render() {
+  render(props) {
     return (
       // Important! Always set the container height explicitly
       <div
@@ -25,8 +25,8 @@ class SimpleMap extends Component {
       >
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+          center={this.props.CurrentLocation || this.props.center}
+          zoom={this.props.CurrentZoom || this.props.zoom}
         >
           <AnyReactComponent
             lat={this.props.center.lat}
@@ -42,6 +42,7 @@ class SimpleMap extends Component {
               lat={result.Lat}
               lng={result.Lng}
               text={result.Name}
+              alt="A map of nearby Foodtrucks"
             />
           ))}
 

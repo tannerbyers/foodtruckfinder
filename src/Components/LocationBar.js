@@ -3,7 +3,7 @@
 import React from 'react';
 import  {Input, InputGroupAddon, InputGroup, Button} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FindMeBtn from './FindMeBtn.js';
+
 const LocationBar = (props) => {
         return (
     <div>
@@ -11,8 +11,6 @@ const LocationBar = (props) => {
         <Input  placeholder="Zip Code or Address" />
         <InputGroupAddon addonType="prepend"><Button>Search</Button></InputGroupAddon>
     </InputGroup>
-    <br/>
-   <FindMeBtn/>
     </div>
 )
 }
