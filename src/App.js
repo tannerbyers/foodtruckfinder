@@ -48,7 +48,8 @@ class App extends Component {
     this.state = {
       lat: 30.237247,
       lng: -81.519488,
-      zoom: null
+      zoom: null,
+      centered: false
     }
     this.getLocation = this.getLocation.bind(this);
   }
@@ -56,7 +57,7 @@ class App extends Component {
   getLocation() {
     navigator.geolocation.getCurrentPosition(
         position => {
-          this.setState({ lat: position.coords.latitude, lng: position.coords.longitude, zoom: 14});
+          this.setState({ lat: position.coords.latitude, lng: position.coords.longitude, zoom: 14, centered: true});
           console.log("lat = " + this.state.lat, "lng = " + this.state.lng)
         },
         error => console.log(error)

@@ -14,8 +14,6 @@ class SimpleMap extends Component {
     zoom: 11
   };
 
- 
-
   render(props) {
     return (
       // Important! Always set the container height explicitly
@@ -28,6 +26,22 @@ class SimpleMap extends Component {
           center={this.props.CurrentLocation || this.props.center}
           zoom={this.props.CurrentZoom || this.props.zoom}
         >
+          <img
+            src="http://pluspng.com/img-png/you-are-here-png-hd-you-are-here-icon-512.png"
+            lat={
+              this.props.CurrentLocation.centered
+                ? this.props.CurrentLocation.lat
+                : null
+            }
+            lng={
+              this.props.CurrentLocation.centered
+                ? this.props.CurrentLocation.lng
+                : null
+            }
+            height="60"
+            width="60"
+          />
+
           <AnyReactComponent
             lat={this.props.center.lat}
             lng={this.props.center.lng}
