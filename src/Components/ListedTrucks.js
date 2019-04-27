@@ -7,7 +7,7 @@ import React from "react";
 
 const ListedTrucks = (props) => {
   return (
-    <div className="container" style={{ width: '50vh' }}>
+    <div>
       <ListGroup>
       {props.Data.map((result, i) => (
         <ListGroupItem >{result.Name}</ListGroupItem>
