@@ -18,11 +18,12 @@ const ExtendedList = (props) => {
   return (
     <div>
         <Container fluid >
-        <ListGroupItem onClick={handleClick} >{props.data ? props.data.Name : null}</ListGroupItem>
+        <ListGroupItem onClick={handleClick} >{props.data ? props.data.Name : null}
         <Row>
             <Col>{isOpen ? props.data.Address : null }</Col>
             <Col>{isOpen ? props.data.Hours : null }</Col>
         </Row>
+        </ListGroupItem>
         </Container>
     </div>
   );

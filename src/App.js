@@ -18,7 +18,7 @@ const TestData = [
     Location: [30.237247, -81.519488],
     Menu: "google.com",
     Days: [1, 3, 5],
-    Hours: "10 AM - 1 PM",
+    Hours: "12 AM - 8 PM",
     Lat: 30.287064,
     Lng: -81.548977,
     Address: "Random Street"
@@ -28,7 +28,7 @@ const TestData = [
     Location: [30.237247, -81.519488],
     Menu: "google.com",
     Days: [1, 3, 5],
-    Hours: "10 AM - 1 PM",
+    Hours: "10 AM - 6 PM",
     Lat: 30.239889,
     Lng: -81.591209,
     Address: "Your Street"
@@ -38,7 +38,7 @@ const TestData = [
     Location: [30.237247, -81.519488],
     Menu: "<a href = www.google.com />",
     Days: [1, 3, 5],
-    Hours: "10 AM - 1 PM",
+    Hours: "9 AM - 1 PM",
     Lat: 30.25,
     Lng: -81.53,
     Address: "my Street"
