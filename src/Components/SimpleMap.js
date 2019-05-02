@@ -13,13 +13,13 @@ class SimpleMap extends Component {
     },
     zoom: 11
   };
-
+  
   render(props) {
     return (
       // Important! Always set the container height explicitly
       <div
         className="container-fluid"
-        style={{ height: "80vh", width: "70vh" }}
+        style={{ height: "60vh", width: "100%" }}
       >
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}
@@ -42,14 +42,17 @@ class SimpleMap extends Component {
             width="60"
           />
 
-          <AnyReactComponent
+<AnyReactComponent
             lat={this.props.center.lat}
             lng={this.props.center.lng}
-            text="Availity"
-          />
+
+text="Availity"            height="40"
+            width="40"
+         />
 
           {this.props.Data.map((result, i) => (
             <img
+              content={result.Name}
               src="http://wherethatfoodtruck.com/graphics/default/logo.png"
               height="42"
               width="35"

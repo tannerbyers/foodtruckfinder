@@ -1,0 +1,29 @@
+Example: 
+Mr. Taco Truck
+Address: 10143 Beach Blvd, Jacksonville, FL 32246
+Hours: 
+Saturday	6:30PM–2AM
+Sunday	Closed
+Monday	6:30PM–12AM
+Tuesday	6:30PM–12AM
+Wednesday	6:30PM–12AM
+Thursday	6:30PM–12AM
+Friday	6:30PM–2AM
+
+
+
+Could scrape websites(most dont have website), facebook, google maps. 
+
+Could have food truck owners fill out form and submit and parse into database. 
+
+
+
+Requirements
+Food Truck Name
+Location
+Perferrably Menu 
+
+
+Will need to setup Nodejs w/ SQL for saving food truck information
+
+React will display data and send request for todays food truck list to save to state 

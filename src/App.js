@@ -11,32 +11,37 @@ import FindMeBtn from "./Components/FindMeBtn";
 import "./App.css";
 import "./index.css"
 const TestData = [
+  
+  
   {
     Name: "Sweeto Burrito",
     Location: [30.237247, -81.519488],
-    Pic: "google.com",
+    Menu: "google.com",
     Days: [1, 3, 5],
     Hours: "10 AM - 1 PM",
     Lat: 30.287064,
-    Lng: -81.548977
+    Lng: -81.548977,
+    Address: "Random Street"
   },
   {
     Name: "Chinchillas",
     Location: [30.237247, -81.519488],
-    Pic: "google.com",
+    Menu: "google.com",
     Days: [1, 3, 5],
     Hours: "10 AM - 1 PM",
     Lat: 30.239889,
-    Lng: -81.591209
+    Lng: -81.591209,
+    Address: "Your Street"
   },
   {
     Name: "Mamas Food Truck",
     Location: [30.237247, -81.519488],
-    Pic: "google.com",
+    Menu: "<a href = www.google.com />",
     Days: [1, 3, 5],
     Hours: "10 AM - 1 PM",
     Lat: 30.25,
-    Lng: -81.53
+    Lng: -81.53,
+    Address: "my Street"
   }
 ];
 
@@ -52,6 +57,11 @@ class App extends Component {
     this.getLocation = this.getLocation.bind(this);
   }
 
+  getDays() {
+    var d = new Date();
+    var n = d.getDay();
+    console.log(n);
+  }
   getLocation() {
     navigator.geolocation.getCurrentPosition(
       position => {
@@ -71,7 +81,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <FindMeBtn getLocation={this.getLocation} />
+        <FindMeBtn getDays={this.getDays} getLocation={this.getLocation} />
         <br />
         <Row className="">
           <Col>

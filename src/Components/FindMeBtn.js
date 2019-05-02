@@ -9,7 +9,7 @@ export default class FindMeBtn extends Component {
   render(position, props) {
     return (
         <Container>
-      <Button color="primary" onClick={this.props.getLocation}>
+      <Button color="primary" onClick={this.props.getLocation} >
         <h3>Use My Location</h3>
       </Button>
       </Container>

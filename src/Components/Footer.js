@@ -8,7 +8,7 @@ const Footer = (props) => {
   return (
     <div>
         <Container fluid>
-          <p className="lead">Tanner Byers LLC </p>
+          <p className="lead">{props.Index} </p>
         </Container>
     </div>
   );
