@@ -9,10 +9,8 @@ import SimpleMap from "./Components/SimpleMap";
 import ListedTrucks from "./Components/ListedTrucks";
 import FindMeBtn from "./Components/FindMeBtn";
 import "./App.css";
-import "./index.css"
+import "./index.css";
 const TestData = [
-  
-  
   {
     Name: "Sweeto Burrito",
     Location: [30.237247, -81.519488],
@@ -87,7 +85,7 @@ class App extends Component {
           <Col>
             <ListedTrucks Data={TestData} />
           </Col>
-          <Col >
+          <Col>
             <SimpleMap
               CurrentZoom={this.state.zoom}
               CurrentLocation={this.state}
