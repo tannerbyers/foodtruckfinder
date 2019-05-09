@@ -11,7 +11,7 @@ const Header = props => {
         <Container fluid>
           <h1 className="display-1">Food Truck Finder</h1>
           <p className="lead">
-            This app allows you to find local food trucks near you.
+           Find nearby foodtrucks with our realtime Food Truck Locater App! 
           </p>
         </Container>
       </Jumbotron>

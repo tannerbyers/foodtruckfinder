@@ -5,7 +5,7 @@ import { Button, Container } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class FindMeBtn extends Component {
-  render(position, props) {
+  render(props) {
     return (
       <Container>
         <Button color="primary" onClick={this.props.getLocation}>
