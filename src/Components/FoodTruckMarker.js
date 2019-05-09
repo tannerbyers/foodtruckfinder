@@ -20,7 +20,7 @@ const FoodTruckmarker = props => {
         lat={props.Lat}
         lng={props.Lng}
         text={props.result.Name}
-        alt="A map of nearby Foodtrucks"
+        alt="FoodTruck Markers"
       />
     </React.Fragment>
   );

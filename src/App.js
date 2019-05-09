@@ -67,9 +67,8 @@ class App extends Component {
           lat: position.coords.latitude,
           lng: position.coords.longitude,
           zoom: 14,
-          centered: true
+          centered: !this.state.centered
         });
-        console.log("lat = " + this.state.lat, "lng = " + this.state.lng);
       },
       error => console.log(error)
     );
