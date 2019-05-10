@@ -19,7 +19,8 @@ const TestData = [
     Hours: "12 AM - 8 PM",
     Lat: 30.287064,
     Lng: -81.548977,
-    Address: "Random Street"
+    Address: "Random Street",
+    Price: 5
   },
   {
     Name: "Chinchillas",
@@ -29,7 +30,8 @@ const TestData = [
     Hours: "10 AM - 6 PM",
     Lat: 30.239889,
     Lng: -81.591209,
-    Address: "Your Street"
+    Address: "Your Street",
+    Price: 2
   },
   {
     Name: "Mamas Food Truck",
@@ -39,7 +41,8 @@ const TestData = [
     Hours: "9 AM - 1 PM",
     Lat: 30.25,
     Lng: -81.53,
-    Address: "my Street"
+    Address: "my Street",
+    Price: 3
   }
 ];
 

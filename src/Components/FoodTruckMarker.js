@@ -18,7 +18,6 @@ const FoodTruckmarker = props => {
     console.log("Marker Clicked");
     toggleOpen(!isOpen);
     setSelected({ index });
-    console.log("table selected");
   };
 
 

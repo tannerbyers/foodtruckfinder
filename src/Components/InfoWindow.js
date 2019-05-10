@@ -26,18 +26,12 @@ const InfoWindow = (props) => {
         <span style={{ color: 'grey' }}>
           {props.content.Address}{' '}
         </span>
-        <span style={{ color: 'orange' }}>
-          {String.fromCharCode(9733).repeat(Math.floor(props.index))}
-        </span>
-        <span style={{ color: 'lightgrey' }}>
-          {String.fromCharCode(9733).repeat(5 - Math.floor(1))}
-        </span>
       </div>
       <div style={{ fontSize: 14, color: 'grey' }}>
         {props.content.Hours}
       </div>
       <div style={{ fontSize: 14, color: 'grey' }}>
-        {'$'.repeat(5)}
+        {'$'.repeat(props.content.Price)}
       </div>
     </div>
   );
