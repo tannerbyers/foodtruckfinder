@@ -24,7 +24,7 @@ const InfoWindow = (props) => {
       </div>
       <div style={{ fontSize: 14 }}>
         <span style={{ color: 'grey' }}>
-          {props.content.Address}{' '}
+          <a href={props.content.AddressLink} target="_blank">{props.content.Address}</a>
         </span>
       </div>
       <div style={{ fontSize: 14, color: 'grey' }}>
