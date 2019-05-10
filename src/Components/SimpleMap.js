@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
+
 import GoogleMapReact from "google-map-react";
 import FoodTruckmarker from "./FoodTruckMarker";
 
@@ -9,6 +10,15 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const API_KEY = "AIzaSyAOEsdFfHB05mHHfRn0bsfENp8mZ1qIGO0";
 
 class SimpleMap extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+     show: false,
+    };
+  }
+
+
   static defaultProps = {
     center: {
       lat: 30.237247,
@@ -17,15 +27,17 @@ class SimpleMap extends Component {
     zoom: 11
   };
 
+  
+
   onMarkerClick = () => {
     console.log("Marker Clicked");
+    this.setState({
+      show: !this.state.show,
+    });
+    console.log(this.state.show);
+
   };
 
-  handleApiLoaded = (map, maps) => {
-    var infowindow = new maps.InfoWindow({
-      content: "contentString"
-    });
-  };
 
   render(props) {
     return (
@@ -38,8 +50,6 @@ class SimpleMap extends Component {
           bootstrapURLKeys={{ key: API_KEY }}
           center={this.props.CurrentLocation || this.props.center}
           zoom={this.props.CurrentZoom || this.props.zoom}
-          yesIWantToUseGoogleMapApiInternals
-          onGoogleApiLoaded={({ map, maps }) => this.handleApiLoaded(map, maps)}
         >
           <img
             src="http://pluspng.com/img-png/you-are-here-png-hd-you-are-here-icon-512.png"
@@ -65,8 +75,10 @@ class SimpleMap extends Component {
             width="40"
           />
 
-          {this.props.Data.map((result, i) => (
+          {this.props.Data.map((result, index) => (
             <FoodTruckmarker
+              index={index}
+              show={this.state.show}
               onMarkerClick={this.onMarkerClick}
               result={result}
               lat={result.Lat}
