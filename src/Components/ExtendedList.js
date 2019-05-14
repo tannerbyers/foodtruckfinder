@@ -18,7 +18,7 @@ const ExtendedList = props => {
   return (
     <div>
       <Container>
-        <ListGroupItem>
+        <ListGroupItem className="border">
         <b onClick={handleClick}>
           {props.data ? props.data.Name : null}
           </b>

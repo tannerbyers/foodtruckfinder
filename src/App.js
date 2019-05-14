@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import SimpleMap from "./Components/SimpleMap";
 import ListedTrucks from "./Components/ListedTrucks";
 import FindMeBtn from "./Components/FindMeBtn";
+import FoodTruckMarker from "./Components/FoodTruckMarker"
 import "./App.css";
 import "./index.css";
 const TestData = [
@@ -16,30 +17,34 @@ const TestData = [
     Location: [30.237247, -81.519488],
     Menu: "google.com",
     Days: [1, 3, 5],
-    Hours: "12 AM - 8 PM",
+    Hours: "12AM - 8PM",
     Lat: 30.287064,
     Lng: -81.548977,
-    Address: "Random Street"
+    Address: "Random Street",
+    Price: 5
   },
   {
     Name: "Chinchillas",
     Location: [30.237247, -81.519488],
     Menu: "google.com",
     Days: [1, 3, 5],
-    Hours: "10 AM - 6 PM",
+    Hours: "10AM - 6PM",
     Lat: 30.239889,
     Lng: -81.591209,
-    Address: "Your Street"
+    Address: "Your Street",
+    Price: 2
   },
   {
-    Name: "Mamas Food Truck",
-    Location: [30.237247, -81.519488],
-    Menu: "<a href = www.google.com />",
+    Name: "Mr. Taco Truck",
+    Location: [30.287050, -81.548980],
+    Menu: "www.google.com",
     Days: [1, 3, 5],
-    Hours: "9 AM - 1 PM",
+    Hours: "6:30PM – 12AM",
     Lat: 30.25,
     Lng: -81.53,
-    Address: "my Street"
+    AddressLink: "https://goo.gl/maps/muJ1x7rneTFNWMCj6",
+    Address: "10143 Beach Blvd, Jacksonville, FL 32246",
+    Price: 3
   }
 ];
 
@@ -78,9 +83,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <FindMeBtn getDays={this.getDays} getLocation={this.getLocation} />
+        <FindMeBtn getDays={this.getDays} getLocation={this.getLocation} />\
         <br />
-        <Row className="">
+        <Row className="grouping">
           <Col>
             <ListedTrucks Data={TestData} />
           </Col>

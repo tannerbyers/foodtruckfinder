@@ -18,16 +18,15 @@ const FoodTruckmarker = props => {
     console.log("Marker Clicked");
     toggleOpen(!isOpen);
     setSelected({ index });
-    console.log("table selected");
   };
 
 
   return (
-    <React.Fragment>
+    <React.Fragment >
       {isOpen && <InfoWindow index={props.index} content={props.result} />}
       <img
         onClick={onMarkerClick}
-        className="FoodTruckMarker"
+        className="FoodTruckmarker"
         content={props.result.Name}
         src="http://wherethatfoodtruck.com/graphics/default/logo.png"
         height="42"
