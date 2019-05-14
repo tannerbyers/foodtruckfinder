@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import SimpleMap from "./Components/SimpleMap";
 import ListedTrucks from "./Components/ListedTrucks";
 import FindMeBtn from "./Components/FindMeBtn";
+import FoodTruckMarker from "./Components/FoodTruckMarker"
 import "./App.css";
 import "./index.css";
 const TestData = [
@@ -82,9 +83,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <FindMeBtn getDays={this.getDays} getLocation={this.getLocation} />
+        <FindMeBtn getDays={this.getDays} getLocation={this.getLocation} />\
         <br />
-        <Row className="">
+        <Row className="grouping">
           <Col>
             <ListedTrucks Data={TestData} />
           </Col>

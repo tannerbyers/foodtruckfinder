@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { useToggle } from "@availity/hooks";
 const ListedTrucks = props => {
   return (
-    <Container>
+    <Container className="TruckList">
       <h1>Today's Food Trucks</h1>
       <ListGroup>
         {props.Data.map((result, index) => (

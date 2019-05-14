@@ -22,11 +22,11 @@ const FoodTruckmarker = props => {
 
 
   return (
-    <React.Fragment>
+    <React.Fragment >
       {isOpen && <InfoWindow index={props.index} content={props.result} />}
       <img
         onClick={onMarkerClick}
-        className="FoodTruckMarker"
+        className="FoodTruckmarker"
         content={props.result.Name}
         src="http://wherethatfoodtruck.com/graphics/default/logo.png"
         height="42"
