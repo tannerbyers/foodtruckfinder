@@ -22,4 +22,11 @@ code {
  filter: grayscale(100%);
 }
 
+.TruckList {
+  min-width: 100%;
+}
 
+.TruckImage {
+  width: 50%;
+  height: 100%;
+}

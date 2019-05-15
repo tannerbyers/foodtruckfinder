@@ -23,7 +23,7 @@ const ExtendedList = props => {
           {props.data ? props.data.Name : null}
           </b>
           <Row>
-            <Col>{isOpen ? props.data.Address : null}</Col>
+            <Col>{isOpen ? <img className="TruckImage" src={props.data.ImgSrc}/> : null}</Col>
             <Col>{isOpen ? props.data.Hours : null}</Col>
           </Row>
         </ListGroupItem>
