@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 import GoogleMapReact from "google-map-react";
 import FoodTruckmarker from "./FoodTruckMarker";
+import InfoBox from "./InfoBox";
 
 import "../index.css";
 
@@ -44,7 +45,7 @@ class SimpleMap extends Component {
       // Important! Always set the container height explicitly
       <div
         className="container-fluid"
-        style={{ height: "80vh", width: "100%" }}
+        style={{ position: "relative", height: "70vh", width: "90%" }}
       >
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}
@@ -67,6 +68,7 @@ class SimpleMap extends Component {
             width="60"
           />
 
+          <InfoBox />
           <AnyReactComponent
             lat={this.props.center.lat}
             lng={this.props.center.lng}

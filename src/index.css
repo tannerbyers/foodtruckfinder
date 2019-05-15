@@ -27,6 +27,12 @@ code {
 }
 
 .TruckImage {
-  width: 50%;
+  width: 100%;
   height: 100%;
+}
+
+.Map {
+  width: 500vh;
+  height: 500vh;
+
 }
