@@ -24,6 +24,7 @@ code {
 
 .TruckList {
   min-width: 100%;
+  text-align: center;
 }
 
 .TruckImage {
