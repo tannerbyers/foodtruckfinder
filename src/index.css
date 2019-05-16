@@ -19,7 +19,20 @@ code {
 }
 
 .FoodTruckmarker:hover {
- filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
+.TruckList {
+  min-width: 100%;
+}
 
+.TruckImage {
+  width: 100%;
+  height: 100%;
+}
+
+.Map {
+  height: 70vh;
+  width: 90%;
+  border-color: red;
+}
