@@ -19,7 +19,7 @@ code {
 }
 
 .FoodTruckmarker:hover {
- filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .TruckList {
@@ -32,7 +32,7 @@ code {
 }
 
 .Map {
-  width: 500vh;
-  height: 500vh;
-
+  height: 70vh;
+  width: 90%;
+  border-color: red;
 }

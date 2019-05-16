@@ -44,8 +44,8 @@ class SimpleMap extends Component {
     return (
       // Important! Always set the container height explicitly
       <div
-        className="container-fluid"
-        style={{ position: "relative", height: "70vh", width: "90%" }}
+        className="container-fluid Map"
+//        style={{ position: "relative", height: "70vh", width: "90%" }}
       >
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}

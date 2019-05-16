@@ -19,14 +19,14 @@ const ExtendedList = props => {
     <div>
       <Container>
         <ListGroupItem className="border">
-        <b onClick={handleClick}>
+        <h1 onClick={handleClick}>
           {props.data ? props.data.Name : null}
-          </b>
+          </h1>
           <Row>
             <Col>{isOpen ? <img className="TruckImage" src={props.data.ImgSrc}/> : null}</Col>
             <Col>
-            <Row>{isOpen ? <h2><a href={props.data.AddressLink} style={{position: "absolute", right: 10, top: 10}} rel="noopener noreferrer" target="_blank">Address</a></h2> : null}</Row>
-            <Row>{isOpen ? <h2><a href={props.data.Menu} style={{position: "absolute", right: 10, top: 100}} rel="noopener noreferrer" target="_blank">Menu</a></h2> : null} </Row>
+            <Row>{isOpen ? <h2><a href={props.data.AddressLink} style={{position: "relative", textAlign: "center"}} rel="noopener noreferrer" target="_blank">Address</a></h2> : null}</Row>
+            <Row>{isOpen ? <h2><a href={props.data.Menu} style={{position: "relative", textAlign: "center"}} rel="noopener noreferrer" target="_blank">Menu</a></h2> : null} </Row>
             </Col>
           </Row>
         </ListGroupItem>
