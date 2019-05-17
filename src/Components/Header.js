@@ -9,8 +9,8 @@ const Header = props => {
     <div>
       <Jumbotron fluid>
         <Container fluid>
-          <h1 className="display-1">Food Truck Finder</h1>
-          <p className="lead">
+          <h1 >Food Truck Finder</h1>
+          <p>
            Find nearby foodtrucks with our realtime Food Truck Locater App! 
           </p>
         </Container>
