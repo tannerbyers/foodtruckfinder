@@ -27,18 +27,18 @@ const TestData = [
       "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/16684326_1647846598850794_8907527528520582985_n.jpg?_nc_cat=100&_nc_ht=scontent-mia3-1.xx&oh=40214ff8bc9ded15acda85198825bdd2&oe=5D762C08"
   },
   {
-    Name: "Chinchillas",
+    Name: "Rite on Que",
     Location: [30.237247, -81.519488],
-    Menu: "google.com",
+    Menu: "http://www.riteonque.com/menu.html",
     Days: [1, 3, 5],
     Hours: "10AM - 6PM",
-    Lat: 30.239889,
-    Lng: -81.591209,
-    AddressLink: "https://goo.gl/maps/muJ1x7rneTFNWMCj6",
-    Address: "Your Street",
+    Lat: 30.245050,
+    Lng: -81.540540,
+    AddressLink: "https://goo.gl/maps/zEwtZFM8Kb6vhU4K8",
+    Address: "10550 Deerwood Lake Blvd",
     Price: 2,
     ImgSrc:
-      "https://foodtruckfinderusa.com/uploads/Chinchillas%20Eats%20on%20the%20Streets%20Food%20Truck%20Jacksonville.jpeg"
+      "http://nebula.wsimg.com/0a07d20da49a3814e66d49cb2fdb7873?AccessKeyId=F868C14ED52F37E941A9&disposition=0&alloworigin=1"
   },
   {
     Name: "Mr. Taco Truck",

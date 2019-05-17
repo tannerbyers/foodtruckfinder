@@ -23,8 +23,8 @@ code {
 }
 
 .TruckList {
-  min-width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .TruckImage {
