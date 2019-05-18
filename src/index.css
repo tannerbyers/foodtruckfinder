@@ -36,4 +36,5 @@ code {
   height: 70vh;
   width: 90%;
   border-color: red;
+  max-width: 800px;
 }

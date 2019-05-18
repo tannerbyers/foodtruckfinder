@@ -11,14 +11,12 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const API_KEY = "AIzaSyAOEsdFfHB05mHHfRn0bsfENp8mZ1qIGO0";
 
 class SimpleMap extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-     show: false,
+      show: false
     };
   }
-
 
   static defaultProps = {
     center: {
@@ -28,25 +26,18 @@ class SimpleMap extends Component {
     zoom: 11
   };
 
-  
-
   onMarkerClick = () => {
     console.log("Marker Clicked");
     this.setState({
-      show: !this.state.show,
+      show: !this.state.show
     });
     console.log(this.state.show);
-
   };
-
 
   render(props) {
     return (
       // Important! Always set the container height explicitly
-      <div
-        className="container-fluid Map"
-//        style={{ position: "relative", height: "70vh", width: "90%" }}
-      >
+      <div className="container-fluid Map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}
           center={this.props.CurrentLocation || this.props.center}
