@@ -40,26 +40,22 @@ code {
   transform-style: preserve-3d;
   transition: all .7s linear;
   height: 30vh;
-  width: 100%;}
+}
 
 
 .thecard:hover {
   transform: rotateY(180deg);
-
 }
 
 
 .thefront {
-  height: 100%;
-  width: 100%;
   backface-visibility: hidden;
 }
 
 .theback {
-  height: 30vh;
-  width: 30%;
+  height: 100%;
+  width: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   position: absolute;
-  text-align: center;
 }
