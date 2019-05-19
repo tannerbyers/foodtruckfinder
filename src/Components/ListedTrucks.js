@@ -11,21 +11,20 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import ExtendedList from "./ExtendedList";
 import React, { useState } from "react";
-import { useToggle } from "@availity/hooks";
 
 import "../index.css";
 
 const ListedTrucks = props => {
   return (
-    <Container className="TruckList">
+    <Container >
       <h2>
         <b> 🚚Today's Food Trucks🚚 </b>
       </h2>
-      <ListGroup>
+      <div className="TruckList">
         {props.Data.map((result, index) => (
           <ExtendedList index={index} data={result} />
         ))}
-      </ListGroup>
+      </div>
     </Container>
   );
 };
