@@ -8,6 +8,7 @@ Food Truck Location (Lng, Lat)
 Food Truck Picture
 Food truck days Available 
 Food Truck Hours for each day
+Menu Link
 
 
 Test Data: 
@@ -39,11 +40,10 @@ TODO:
 
 X - Make the food truck list selectable and have a dropdown with the above data. 
 X - Add markers on the map for food truck
-O - Add Hover for Markers and Selected FoodTruck Table 
+X - Add Hover for Markers and Selected FoodTruck Table 
+X - Add Info window for markers 
 O - Add Styling to make website pretty
-O - Add Info window for markers 
 O - Add a news feed for local food truck tweets or insta post
-O - Create algorithms for when a food truck is listed depending on the current day. 
 O - Figure out a way to get all the schedules in one format easily 
 
 

@@ -17,9 +17,10 @@ import "../index.css";
 const ListedTrucks = props => {
   return (
     <Container >
-      <h2>
+      <h3>
         <b> 🚚Today's Food Trucks🚚 </b>
-      </h2>
+      </h3>
+      <h5><i>(list view)</i></h5>
       <div className="TruckList">
         {props.Data.map((result, index) => (
           <ExtendedList index={index} data={result} />

@@ -7,7 +7,7 @@ import { Container } from "reactstrap";
 const Footer = props => {
   return (
     <div>
-      <Container fluid>
+      <Container className="footer" fluid>
         <p className="lead">Jacksonville Food Truck Locater Website</p>
       </Container>
     </div>
