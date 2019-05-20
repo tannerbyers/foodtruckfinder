@@ -42,11 +42,11 @@ code {
   height: 30vh;
 }
 
-
+@media screen and (min-width: 768px) {
 .thecard:hover {
   transform: rotateY(180deg);
 }
-
+}
 
 .thefront {
   backface-visibility: hidden;

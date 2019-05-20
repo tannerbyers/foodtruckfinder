@@ -58,8 +58,6 @@ class SimpleMap extends Component {
             height="60"
             width="60"
           />
-
-          <InfoBox />
           <AnyReactComponent
             lat={this.props.center.lat}
             lng={this.props.center.lng}

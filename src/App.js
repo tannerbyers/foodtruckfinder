@@ -87,7 +87,6 @@ class App extends Component {
         />
         <b />
         <ListedTrucks Data={TestData} />
-        <Footer />
       </div>
     );
   }
