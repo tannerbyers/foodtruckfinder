@@ -22,27 +22,31 @@ const ExtendedList = props => {
           <CardImg onClick={handleClick} src={props.data.ImgSrc} />
           <h1 onClick={handleClick}>{props.data.Name}</h1>
         </div>
-       {/*  For Mobile Devices */}
-        <div >
+        {/*  For Mobile Devices */}
+        <div>
           <div>
-            {isOpen ? <h2>
-              <a
-                href={props.data.AddressLink}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Address
-              </a>
-            </h2>: null}
-            {isOpen ? <h2>
-              <a
-                href={props.data.Menu}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Menu
-              </a>
-            </h2> : null}
+            {isOpen ? (
+              <h2>
+                <a
+                  href={props.data.AddressLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Address
+                </a>
+              </h2>
+            ) : null}
+            {isOpen ? (
+              <h2>
+                <a
+                  href={props.data.Menu}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Menu
+                </a>
+              </h2>
+            ) : null}
           </div>
         </div>
         {/*  For Desktop Sceens */}
