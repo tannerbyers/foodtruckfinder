@@ -42,6 +42,7 @@ X - Make the food truck list selectable and have a dropdown with the above data.
 X - Add markers on the map for food truck
 X - Add Hover for Markers and Selected FoodTruck Table 
 X - Add Info window for markers 
+O - 
 O - Add Styling to make website pretty
 O - Add a news feed for local food truck tweets or insta post
 O - Figure out a way to get all the schedules in one format easily 

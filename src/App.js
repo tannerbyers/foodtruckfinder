@@ -2,6 +2,8 @@
 
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
+import AlmaFoodtruck from './almafoodtruck.jpg';
+
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -16,7 +18,6 @@ const TestData = [
     Name: "Sweeto Burrito",
     Location: [30.237247, -81.519488],
     Menu: "https://sweetoburrito.com/menu/",
-    Days: [1, 3, 5],
     Hours: "12AM - 8PM",
     Lat: 30.287064,
     Lng: -81.548977,
@@ -30,7 +31,6 @@ const TestData = [
     Name: "Rite on Que",
     Location: [30.237247, -81.519488],
     Menu: "http://www.riteonque.com/menu.html",
-    Days: [1, 3, 5],
     Hours: "10AM - 6PM",
     Lat: 30.245050,
     Lng: -81.540540,
@@ -39,6 +39,19 @@ const TestData = [
     Price: 2,
     ImgSrc:
       "http://nebula.wsimg.com/0a07d20da49a3814e66d49cb2fdb7873?AccessKeyId=F868C14ED52F37E941A9&disposition=0&alloworigin=1"
+  },
+  {
+    Name: "Alma Fusion",
+    Location: [30.237247, -81.519488],
+    Menu: "https://www.eatalmafusion.com/online-ordering",
+    Hours: "11AM - 2PM",
+    Lat: 30.215030,
+    Lng: -81.578750,
+    AddressLink: "https://goo.gl/maps/2RXarZDqrxokM4hW9",
+    Address: "8335 Freedom Crossing Trail, Jacksonville, FL 32256",
+    Price: 3,
+    ImgSrc:
+    "http://i68.tinypic.com/2ag6wew.jpg"
   }
 ];
 
@@ -54,11 +67,6 @@ class App extends Component {
     this.getLocation = this.getLocation.bind(this);
   }
 
-  getDays() {
-    var d = new Date();
-    var n = d.getDay();
-    console.log(n);
-  }
   getLocation() {
     navigator.geolocation.getCurrentPosition(
       position => {
@@ -77,7 +85,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <FindMeBtn getDays={this.getDays} getLocation={this.getLocation} />
+        <FindMeBtn getLocation={this.getLocation} />
         <br />
         <SimpleMap
         className="Map"
@@ -86,7 +94,8 @@ class App extends Component {
           Data={TestData}
         />
         <b />
-        <ListedTrucks Data={TestData} />
+        <ListedTrucks Data={TestData} /> 
+        <Footer />
       </div>
     );
   }

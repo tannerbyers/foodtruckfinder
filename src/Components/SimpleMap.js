@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 import GoogleMapReact from "google-map-react";
 import FoodTruckmarker from "./FoodTruckMarker";
-import InfoBox from "./InfoBox";
 
 import "../index.css";
 
