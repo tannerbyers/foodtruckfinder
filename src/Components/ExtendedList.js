@@ -23,7 +23,7 @@ const ExtendedList = props => {
           <h1 onClick={handleClick}>{props.data.Name}</h1>
         </div>
         {/*  For Mobile Devices */}
-        <div>
+        <div className="MobileFoodtruckList">
           <div>
             {isOpen ? (
               <h2>

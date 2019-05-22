@@ -41,7 +41,7 @@ const TestData = [
       "http://nebula.wsimg.com/0a07d20da49a3814e66d49cb2fdb7873?AccessKeyId=F868C14ED52F37E941A9&disposition=0&alloworigin=1"
   },
   {
-    Name: "Alma Food TrucK",
+    Name: "Alma Fusion",
     Location: [30.237247, -81.519488],
     Menu: "https://www.eatalmafusion.com/online-ordering",
     Hours: "11AM - 2PM",
