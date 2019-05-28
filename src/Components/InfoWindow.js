@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-import React, { Component } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const InfoWindow = (props) => {
@@ -24,7 +24,7 @@ const InfoWindow = (props) => {
       </div>
       <div style={{ fontSize: 14 }}>
         <span style={{ color: 'black' }}>
-          <a href={props.content.AddressLink} target="_blank">{props.content.Address}</a>
+          <a href={props.content.AddressLink} target="_blank" rel="noopener noreferrer">{props.content.Address}</a>
         </span>
       </div>
       <div style={{ fontSize: 14, color: 'grey' }}>

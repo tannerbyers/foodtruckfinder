@@ -1,16 +1,9 @@
 /*jshint esversion: 6 */
 
-import {
-  ListGroup,
-  ListGroupItem,
-  Col,
-  Row,
-  Container,
-  Jumbotron
-} from "reactstrap";
+import {Container} from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ExtendedList from "./ExtendedList";
-import React, { useState } from "react";
+import React from "react";
 
 import "../index.css";
 

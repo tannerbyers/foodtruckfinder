@@ -40,6 +40,7 @@ code {
   transform-style: preserve-3d;
   transition: all .7s linear;
   height: 30vh;
+  font-size: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +51,7 @@ code {
 
 .thefront {
   backface-visibility: hidden;
+  font-size: 100%;
 }
 
 .theback {
@@ -61,7 +63,8 @@ code {
 }
 
 @media screen and (min-width: 768px) {
-.MobileFoodtruckList {
+.MobileFoodtruckList h1 {
   visibility: hidden;
+  font-size: 100%;
 }
 }

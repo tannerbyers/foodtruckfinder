@@ -1,17 +1,15 @@
 /*jshint esversion: 6 */
 
-import React, { useState } from "react";
+import React from "react";
 import { useToggle } from "@availity/hooks";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { CardImg, Card, ListGroupItem, Row, Col } from "reactstrap";
+import { CardImg, Card } from "reactstrap";
 
 const ExtendedList = props => {
-  const [selected, setSelected] = useState({});
   const [isOpen, toggleOpen] = useToggle();
 
   const handleClick = index => {
     toggleOpen(!isOpen);
-    setSelected({ index });
     console.log("table selected");
   };
 
@@ -20,13 +18,13 @@ const ExtendedList = props => {
       <Card className="thecard">
         <div className="thefront">
           <CardImg onClick={handleClick} src={props.data.ImgSrc} />
-          <h1 onClick={handleClick}>{props.data.Name}</h1>
+          <h2 onClick={handleClick}>{props.data.Name}</h2>
         </div>
         {/*  For Mobile Devices */}
         <div className="MobileFoodtruckList">
           <div>
             {isOpen ? (
-              <h2>
+              <h3>
                 <a
                   href={props.data.AddressLink}
                   rel="noopener noreferrer"
@@ -34,10 +32,10 @@ const ExtendedList = props => {
                 >
                   Address
                 </a>
-              </h2>
+              </h3>
             ) : null}
             {isOpen ? (
-              <h2>
+              <h3>
                 <a
                   href={props.data.Menu}
                   rel="noopener noreferrer"
@@ -45,7 +43,7 @@ const ExtendedList = props => {
                 >
                   Menu
                 </a>
-              </h2>
+              </h3>
             ) : null}
           </div>
         </div>
@@ -54,7 +52,7 @@ const ExtendedList = props => {
           <h1 onClick={handleClick}>{props.data.Name}</h1>
           <br />
           <div>
-            <h2>
+            <h3>
               <a
                 href={props.data.AddressLink}
                 rel="noopener noreferrer"
@@ -62,8 +60,8 @@ const ExtendedList = props => {
               >
                 Address
               </a>
-            </h2>
-            <h2>
+            </h3>
+            <h3>
               <a
                 href={props.data.Menu}
                 rel="noopener noreferrer"
@@ -71,7 +69,7 @@ const ExtendedList = props => {
               >
                 Menu
               </a>
-            </h2>
+            </h3>
           </div>
         </div>
       </Card>
