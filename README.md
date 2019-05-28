@@ -15,9 +15,8 @@ npm start
 
 * [Google Map React](https://github.com/google-map-react/google-map-react) - Allows React Components to Render on the Google Maps and use Google Maps API.
 * [Create React App](https://facebook.github.io/create-react-app/docs/getting-started) - Create React App is an officially supported way to create single-page React applications. 
-* [availity/hooks](https://www.npmjs.com/package/@availity/hooks) - Custom Hooks from my work
-React strap 
-
+* [availity/hooks](https://www.npmjs.com/package/@availity/hooks) - Custom Hooks from my work.
+* [React strap](https://reactstrap.github.io/) - Easy to use React Bootstrap 4 components
 
 ## Authors
 * **Tanner Byers** - *Initial work* - [Github](https://github.com/tannerbyers)
@@ -25,7 +24,6 @@ React strap
 ## Acknowlegements
 
 *Christian Arroyvance - Came up with the Idea
-
 
 ### Data Needed: 
 
