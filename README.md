@@ -3,6 +3,9 @@
 
 Use this web app to provide a food truck finder in your local area! 
 
+![Foodtruckfinder Screenshot](/screenshotsd.PNG)
+
+
 ## Getting Started 
 
 ```
@@ -17,6 +20,12 @@ npm start
 * [Create React App](https://facebook.github.io/create-react-app/docs/getting-started) - Create React App is an officially supported way to create single-page React applications. 
 * [availity/hooks](https://www.npmjs.com/package/@availity/hooks) - Custom Hooks from my work.
 * [React strap](https://reactstrap.github.io/) - Easy to use React Bootstrap 4 components
+
+
+# Working on 
+* Deploying project on website
+* Adding live twitter/insta feed 
+* Possible Backend for curating foodtruck info
 
 ## Authors
 * **Tanner Byers** - *Initial work* - [Github](https://github.com/tannerbyers)
