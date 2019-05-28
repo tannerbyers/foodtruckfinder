@@ -44,6 +44,7 @@ class SimpleMap extends Component {
         >
           <img
             src="http://pluspng.com/img-png/you-are-here-png-hd-you-are-here-icon-512.png"
+            alt="youarehereicon"
             lat={
               this.props.CurrentLocation.centered
                 ? this.props.CurrentLocation.lat

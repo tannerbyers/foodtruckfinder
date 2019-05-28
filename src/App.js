@@ -1,16 +1,11 @@
 /*jshint esversion: 6 */
 
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import AlmaFoodtruck from './almafoodtruck.jpg';
-
-
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import SimpleMap from "./Components/SimpleMap";
 import ListedTrucks from "./Components/ListedTrucks";
 import FindMeBtn from "./Components/FindMeBtn";
-import FoodTruckMarker from "./Components/FoodTruckMarker";
 import "./App.css";
 import "./index.css";
 const TestData = [
@@ -95,7 +90,6 @@ class App extends Component {
         />
         <b />
         <ListedTrucks Data={TestData} /> 
-        <Footer />
       </div>
     );
   }
