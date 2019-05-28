@@ -4,6 +4,11 @@ Use this web app to provide a food truck finder in your local area!
 
 ## Getting Started 
 
+```
+git clone https://github.com/tannerbyers/foodtruckfinder.git
+npm install 
+npm start
+```
 
 ## Built With
 
@@ -21,12 +26,11 @@ React strap
 *Christian Arroyvance - Came up with the Idea
 
 
+### Data Needed: 
 
-
-Data Needed: 
-Food truck Name
-Food Truck Location (Lng, Lat)
-Food Truck Picture
-Food truck days Available 
-Food Truck Hours for each day
-Menu Link
+* Food truck Name
+* Food Truck Location (Lng, Lat)
+* Food Truck Picture
+* Food truck days Available 
+* Food Truck Hours for each day
+* Menu Link
