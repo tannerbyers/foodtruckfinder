@@ -1,6 +1,27 @@
-foodtruckfinder
+# foodtruckfinder
 
-This app will be to find local food trucks in jax. 
+Use this web app to provide a food truck finder in your local area! 
+
+## Getting Started 
+
+
+## Built With
+
+* [Google Map React](https://github.com/google-map-react/google-map-react) - Allows React Components to Render on the Google Maps and use Google Maps API.
+* [Create React App](https://facebook.github.io/create-react-app/docs/getting-started) - Create React App is an officially supported way to create single-page React applications. 
+* [availity/hooks](https://www.npmjs.com/package/@availity/hooks) - Custom Hooks from my work
+React strap 
+
+
+## Authors
+* **Tanner Byers** - *Initial work* - [Github](https://github.com/tannerbyers)
+
+## Acknowlegements
+
+*Christian Arroyvance - Came up with the Idea
+
+
+
 
 Data Needed: 
 Food truck Name
@@ -9,43 +30,3 @@ Food Truck Picture
 Food truck days Available 
 Food Truck Hours for each day
 Menu Link
-
-
-Test Data: 
-FoodTrucks : [
-    SweetoBurrito : {
-        Name: "Sweeto Burrito"
-        Location: {{30.237247, -81.519488}
-        Pic: "google.com"
-        Days: [ M, W, F ]
-        Hours: "10 AM - 1 PM"
-    },
-    Chinchillas : {
-        Name: "Chinchillas"
-        Location: {{30.237247, -81.519488}
-        Pic: "google.com"
-        Days: [ M, W, F ]
-        Hours: "10 AM - 1 PM"
-    },
-    MamasFoodtruck : {
-        Name: "Mamas Food Truck"
-        Location: {{30.237247, -81.519488}
-        Pic: "google.com"
-        Days: [ M, W, F ]
-        Hours: "10 AM - 1 PM"
-    }
-]
-
-TODO:
-
-X - Make the food truck list selectable and have a dropdown with the above data. 
-X - Add markers on the map for food truck
-X - Add Hover for Markers and Selected FoodTruck Table 
-X - Add Info window for markers 
-O - 
-O - Add Styling to make website pretty
-O - Add a news feed for local food truck tweets or insta post
-O - Figure out a way to get all the schedules in one format easily 
-
-
-So far this app is created with React, Reactstrap, Google-map-react library.
