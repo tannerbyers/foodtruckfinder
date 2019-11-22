@@ -35,36 +35,7 @@ code {
   max-width: 800px;
 }
 
-
-.thecard {
-  transform-style: preserve-3d;
-  transition: all .7s linear;
-  height: 30vh;
-  font-size: 100%;
-}
-
-@media screen and (min-width: 768px) {
-.thecard:hover {
-  transform: rotateY(180deg);
-}
-}
-
-.thefront {
-  backface-visibility: hidden;
-  font-size: 100%;
-}
-
-.theback {
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  position: absolute;
-}
-
-@media screen and (min-width: 768px) {
-.MobileFoodtruckList h1 {
-  visibility: hidden;
-  font-size: 100%;
-}
+.dimg {
+  height: 250px;
+  width: 250px;
 }
