@@ -1,12 +1,10 @@
 /*jshint esversion: 6 */
 
 import React from "react";
-import { useToggle } from "@availity/hooks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CardImg, Card } from "reactstrap";
 
 const ExtendedList = props => {
-  const [isOpen, toggleOpen] = useToggle();
   return (
     <React.Fragment>
       <Card>

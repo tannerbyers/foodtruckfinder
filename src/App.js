@@ -20,7 +20,7 @@ const TestData = [
     Address: "Random Street",
     Price: 5,
     ImgSrc:
-      "https://github.com/tannerbyers/foodtruckfinder/blob/master/SweetoTrailerPretty-1030x772.png?raw=true"
+      "https://github.com/tannerbyers/foodtruckfinder/blob/master/assets/Sweeto.png?raw=true"
   },
   {
     Name: "Rite on Que",
@@ -46,7 +46,7 @@ const TestData = [
     Address: "8335 Freedom Crossing Trail, Jacksonville, FL 32256",
     Price: 3,
     ImgSrc:
-    "https://github.com/tannerbyers/foodtruckfinder/blob/master/src/almafoodtruck.jpg?raw=true"
+    "https://github.com/tannerbyers/foodtruckfinder/blob/master/assets/almafoodtruck.jpg?raw=true"
   },
   {
     Name: "Sweeto Burrito",
@@ -59,7 +59,7 @@ const TestData = [
     Address: "Random Street",
     Price: 5,
     ImgSrc:
-      "https://github.com/tannerbyers/foodtruckfinder/blob/master/SweetoTrailerPretty-1030x772.png?raw=true"
+      "https://github.com/tannerbyers/foodtruckfinder/blob/master/assets/Sweeto.png?raw=true"
   },
   {
     Name: "Rite on Que",
@@ -85,7 +85,7 @@ const TestData = [
     Address: "8335 Freedom Crossing Trail, Jacksonville, FL 32256",
     Price: 3,
     ImgSrc:
-    "https://github.com/tannerbyers/foodtruckfinder/blob/master/src/almafoodtruck.jpg?raw=true"
+    "https://github.com/tannerbyers/foodtruckfinder/blob/master/assets/almafoodtruck.jpg?raw=true"
   }
 ];
 
