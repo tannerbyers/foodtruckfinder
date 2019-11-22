@@ -20,7 +20,7 @@ const TestData = [
     Address: "Random Street",
     Price: 5,
     ImgSrc:
-      "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/16684326_1647846598850794_8907527528520582985_n.jpg?_nc_cat=100&_nc_ht=scontent-mia3-1.xx&oh=40214ff8bc9ded15acda85198825bdd2&oe=5D762C08"
+      "https://github.com/tannerbyers/foodtruckfinder/blob/master/SweetoTrailerPretty-1030x772.png?raw=true"
   },
   {
     Name: "Rite on Que",
@@ -46,7 +46,7 @@ const TestData = [
     Address: "8335 Freedom Crossing Trail, Jacksonville, FL 32256",
     Price: 3,
     ImgSrc:
-    "http://i68.tinypic.com/2ag6wew.jpg"
+    "https://github.com/tannerbyers/foodtruckfinder/blob/master/src/almafoodtruck.jpg?raw=true"
   }
 ];
 
