@@ -9,20 +9,18 @@ import "../index.css";
 
 const FoodTruckmarker = props => {
 
-  const [selected, setSelected] = useState({});
   const [isOpen, toggleOpen] = useToggle();
 
 
   const onMarkerClick = (index) => {
     console.log("Marker Clicked");
     toggleOpen(!isOpen);
-    setSelected({ index });
   };
 
 
   return (
     <React.Fragment >
-      {isOpen && <InfoWindow index={props.index} content={props.result} />}
+      {isOpen && <InfoWindow content={props.result} />}
       <img
         onClick={onMarkerClick}
         className="FoodTruckmarker"

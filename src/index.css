@@ -73,8 +73,7 @@ hr {
 }
 
 a {
-  text-decoration: none;
-  color: #00d9ff !important;
+  color: grey !important;
 }
 
 .CardDescription {

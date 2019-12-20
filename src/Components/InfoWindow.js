@@ -22,6 +22,8 @@ const InfoWindow = (props) => {
 <div style={infoWindowStyle}>
       <div style={{ fontSize: 16 }}>
       <h3> {props.content.Name} </h3>
+      <img src={props.content.ImgSrc} width="100" height="100" />
+
       </div>
       <div style={{ fontSize: 14 }}>
         <span style={{ color: 'black' }}>
