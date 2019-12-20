@@ -6,15 +6,15 @@ import { Jumbotron, Container } from "reactstrap";
 
 const Header = props => {
   return (
-    <div>
-      <Jumbotron fluid>
+    <div className="Header">
+      <div fluid>
         <Container fluid>
           <h1 className="display-3">Food Truck Finder</h1>
           <p className="lead">
             Find nearby foodtrucks with our realtime Food Truck Locater App!
           </p>
         </Container>
-      </Jumbotron>
+      </div>
     </div>
   );
 };

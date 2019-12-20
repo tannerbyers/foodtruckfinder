@@ -11,7 +11,7 @@ const ListedTrucks = props => {
   return (
     <Container >
       <h3>
-        <b> 🚚Today's Food Trucks🚚 </b>
+        <b> 🚚 Today's Food Trucks 🚚 </b>
       </h3>
       <h5><i>(list view)</i></h5>
       <div className="TruckList">

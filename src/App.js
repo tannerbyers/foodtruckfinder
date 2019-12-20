@@ -114,6 +114,10 @@ class App extends Component {
       error => console.log(error)
     );
   }
+  
+  componentDidMount(){
+    document.querySelector(".loading").innerHTML = "";
+  }
 
   render() {
     return (
@@ -122,13 +126,13 @@ class App extends Component {
         <FindMeBtn getLocation={this.getLocation} />
         <br />
         <SimpleMap
-        className="Map"
           CurrentZoom={this.state.zoom}
           CurrentLocation={this.state}
           Data={TestData}
         />
         <b />
         <ListedTrucks Data={TestData} /> 
+        <Footer />
       </div>
     );
   }

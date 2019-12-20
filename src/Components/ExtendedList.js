@@ -3,24 +3,25 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CardImg, Card } from "reactstrap";
+import FoodtruckImg from "../assets/food-truck.png"
+import directionsImg from "../assets/directions.png"
+import menuImg from "../assets/menu.png"
 
 const ExtendedList = props => {
   return (
     <React.Fragment>
-      <Card>
-        <div>
-          <img className="dimg" src={props.data.ImgSrc} />
+      <Card className="foodtruckcard">
+          <img className="dimg" src={FoodtruckImg} />
           <h2>{props.data.Name}</h2>
-        </div>
         <div className="MobileFoodtruckList">
-          <div>
+          <div className="CardDescription">
               <h3>
                 <a
                   href={props.data.AddressLink}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Address
+                  <img src={directionsImg}height="42" width="42" />
                 </a>
               </h3>
               <h3>
@@ -29,7 +30,7 @@ const ExtendedList = props => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Menu
+                  <img src={menuImg}height="42" width="42" />
                 </a>
               </h3>
           </div>
