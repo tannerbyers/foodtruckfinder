@@ -11,7 +11,9 @@ const ListedTrucks = props => {
   return (
     <Container >
       <h3>
-        <b> 🚚 Today's Food Trucks 🚚 </b>
+        <b> <span role="img" aria-labelledby="truck"> 🚚
+        Today's Food Trucks 
+      🚚 </span></b>
       </h3>
       <h5><i>(list view)</i></h5>
       <div className="TruckList">

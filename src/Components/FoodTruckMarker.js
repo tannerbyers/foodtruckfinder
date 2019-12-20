@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InfoWindow from "./InfoWindow";
 import { useToggle } from "@availity/hooks";
