@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import SimpleMap from "./Components/SimpleMap";
 import ListedTrucks from "./Components/ListedTrucks";
 import FindMeBtn from "./Components/FindMeBtn";
+import Navbar from "./Components/Navbar";
 import "./App.css";
 import "./index.css";
 const TestData = [
@@ -123,6 +124,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
         <Header />
         <FindMeBtn getLocation={this.getLocation} />
         <br />
