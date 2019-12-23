@@ -9,6 +9,7 @@ import FindMeBtn from "./Components/FindMeBtn";
 import Navbar from "./Components/Navbar";
 import "./App.css";
 import "./index.css";
+
 const TestData = [
   {
     Name: "Sweeto Burrito",
@@ -116,9 +117,10 @@ class App extends Component {
       error => console.log(error)
     );
   }
-  
   componentDidMount(){
-    document.querySelector(".loading").innerHTML = "";
+    setTimeout(() => {
+      document.querySelector(".loading").outerHTML = "";
+    }, 1500);
   }
 
   render() {
