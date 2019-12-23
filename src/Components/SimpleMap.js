@@ -6,7 +6,6 @@ import FoodTruckmarker from "./FoodTruckMarker";
 
 import "../index.css";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const API_KEY = "AIzaSyAOEsdFfHB05mHHfRn0bsfENp8mZ1qIGO0";
 
 class SimpleMap extends Component {
@@ -33,7 +32,7 @@ class SimpleMap extends Component {
     console.log(this.state.show);
   };
 
-  render(props) {
+  render() {
     return (
       // Important! Always set the container height explicitly
       <div className="container Map">
@@ -58,16 +57,9 @@ class SimpleMap extends Component {
             height="60"
             width="60"
           />
-          <AnyReactComponent
-            lat={this.props.center.lat}
-            lng={this.props.center.lng}
-            text="Availity"
-            height="40"
-            width="40"
-          />
-
           {this.props.Data.map((result, index) => (
             <FoodTruckmarker
+              key={index}
               index={index}
               show={this.state.show}
               onMarkerClick={this.onMarkerClick}

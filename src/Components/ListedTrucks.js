@@ -17,8 +17,8 @@ const ListedTrucks = props => {
       </h3>
       <h5><i>(list view)</i></h5>
       <div className="TruckList">
-        {props.Data.map((result) => (
-          <ExtendedList data={result} />
+        {props.Data.map((result, index) => (
+          <ExtendedList data={result} key={index}/>
         ))}
       </div>
     </Container>
