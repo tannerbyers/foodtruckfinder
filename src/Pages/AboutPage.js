@@ -1,5 +1,5 @@
 import React from 'react'
-
+import testfoodtruck from '../assets/testfoodtruck.png'
 class AboutPage extends React.Component {
  
   componentDidMount(){
@@ -19,7 +19,9 @@ class AboutPage extends React.Component {
 Hungry yet? Track down a Jacksonville food truck near you!
 
 Oh, and don’t forget to bookmark this page</p>	
-</div>
+
+	    <img src={testfoodtruck} width="100"/>
+	   </div>
     )
   }
 }

@@ -135,3 +135,26 @@ nav ul ul ul li {
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
+
+.formInput {
+padding: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction:column; 
+}
+
+input {
+margin: 10px;
+padding: 5px;
+border-radius: 25px;
+width: 80%;
+}
+
+#input-submit {
+text-align: center;
+width: 30%;
+background: white;
+}
+
+
