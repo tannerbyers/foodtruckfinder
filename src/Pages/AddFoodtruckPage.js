@@ -1,7 +1,7 @@
 import React from 'react'
 import "../index.css"
 
-import DateTimePicker from 'react-datetime-picker';
+import DateTimePicker  from 'react-datetime-picker';
 
 class AddFoodTruckPage  extends React.Component {
 constructor(props) {
@@ -29,6 +29,7 @@ onChange = date => this.setState({ date })
 	    <p> Date & Time
 	    <i> (currently only support one date submission at a time) </i></p>
 	    <DateTimePicker 
+	      required
 	      onChange={this.onChange}
 	      value={this.state.date}
 	    />
