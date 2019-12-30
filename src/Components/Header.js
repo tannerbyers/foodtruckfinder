@@ -11,7 +11,7 @@ const Header = props => {
         <Container>
           <h1 className="display-3">Food Truck Finder</h1>
           <p className="lead">
-            Find nearby foodtrucks with our realtime Food Truck Locater App!
+            Find nearby foodtrucks with our local Food Truck Locater App!
           </p>
         </Container>
       </div>
