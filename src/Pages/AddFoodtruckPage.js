@@ -1,6 +1,6 @@
 import React from 'react'
 import "../index.css"
-
+import {Form, Input, Container, Button, Label} from 'reactstrap'
 import DateTimePicker  from 'react-datetime-picker';
 
 class AddFoodTruckPage  extends React.Component {
@@ -23,19 +23,27 @@ onChange = date => this.setState({ date })
     return (
 	<div>
 	<h1>Add Your Food Truck Here!</h1>
-	<form class="formInput">
-	    <input type="text" id="input-name" placeholder="Foodtuck Name"/>
-	    <input type="email" id="input-address" placeholder="Address"/>
+	<Container className="px-5 py-5">
+	<Form className="justify-content-center" >
+      <Label> Foodtruck Name </Label>
+      <Input type="text" id="Input-name" />
+      <Label> Address </Label>
+	    <Input type="email" id="Input-address" placeholder='e.g. "Near 1234 Street" or "1234 Street"'/>
 	    <p> Date & Time
+      <br/>
 	    <i> (currently only support one date submission at a time) </i></p>
 	    <DateTimePicker 
-	      required
+	      className="bg-white"
+        required
 	      onChange={this.onChange}
 	      value={this.state.date}
-	    />
-	    <input type="text" id="input-website" placeholder="Website (Optional)"/>
-	  <input type="submit" value="Submit" id="input-submit"/>
-	</form>
+	    /> 
+      <br/>
+      <Label > Website </Label>
+	    <Input className="my-2" type="text" id="Input-website" placeholder="(Optional)"/>
+	 <Button type="submit" value="Submit" id="Input-submit">Submit</Button>
+	</Form>
+	</Container>
 	</div>
 )
   }

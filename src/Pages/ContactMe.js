@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
+import "../index.css"
 
 class ContactPage extends React.Component {
   
