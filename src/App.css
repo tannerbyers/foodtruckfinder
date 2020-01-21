@@ -138,7 +138,10 @@ li > a:only-child:after { content: ''; }
 
 
 .Email a{
-	color: blue !important;
+	color: rgb(243, 81, 32)	!important;
 }
 
 
+.footerLink {
+	color: rgb(243, 81, 32)	!important;
+}

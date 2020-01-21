@@ -8,7 +8,7 @@ const Footer = props => {
   return (
     <div>
       <Container className="footer" fluid>
-        <p className="lead">Jacksonville Food Truck Locater 2019 Created by <a href="www.tannerbyers.com"> Tanner Byers </a></p>
+        <p className=" lead">Jacksonville Food Truck Locater 2019 Created by <a  className="footerLink" target="_blank" target="_top" href="https://www.tannerbyers.com"> <strong> Tanner Byers </strong> </a></p>
       </Container>
     </div>
   );

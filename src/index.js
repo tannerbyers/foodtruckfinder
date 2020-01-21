@@ -12,6 +12,8 @@ import App from "./App";
 import AboutPage from "./Pages/AboutPage"
 import AddFoodtruckPage from "./Pages/AddFoodtruckPage"
 import ContactMe from "./Pages/ContactMe"
+import NoMatchPage from "./Pages/NoMatchPage"
+
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 const routing = (
@@ -46,6 +48,7 @@ const routing = (
       <Route path="/About" component={AboutPage} />
       <Route path="/Contact" component={ContactMe} />
       <Route path="/AddFoodtruck" component={AddFoodtruckPage} />
+      <Route component={NoMatchPage} />
     </Switch>
     </div>
   </Router>
