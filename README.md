@@ -3,7 +3,6 @@
 
 Use this web app to provide a food truck finder in your local area! 
 Check it out live: https://tannerbyers.github.io/foodtruckfinder/
-![Foodtruckfinder Screenshot](/assets/screenshotsd.PNG)
 
 
 ## Getting Started 
